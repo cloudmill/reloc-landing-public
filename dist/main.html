@@ -6,10 +6,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link href="https://vitejs.dev/logo.svg" rel="icon" type="image/x-icon">
-    <script type="module" crossorigin src="assets/index-c4faa2ff.js"></script>
+    <script type="module" crossorigin src="assets/index-f3262df3.js"></script>
     <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body>
+  <body class="body body--notransition">
     <div class="wrapper">
       <div class="modal-block">
       </div>
@@ -1746,26 +1746,32 @@
         <div class="main-page">
           <section class="main-page__hero">
             <div class="main-page__hero-container">
+              <div class="main-page__hero-elem" data-aos="fade-up" data-aos-delay="200">
+                <picture class="picture">
+                  <source class="lazyload" type="image/webp" srcset="webp/hero-elem.webp 1x" alt="hero-elem.png" media="(min-width: 769px)"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/hero-elem.jpg 1x" alt="hero-elem.png" media="(min-width: 769px)"/>
+                  <source class="lazyload" type="image/webp" srcset="webp/hero-elem-mob.webp 1x" alt="hero-elem.png" media="(max-width: 768px)"/>
+                  <source class="lazyload" type="image/jpeg" srcset="images/hero-elem-mob.jpg 1x" alt="hero-elem.png" media="(max-width: 768px)"/><img class="picture__img lazyload" data-src="images/hero-elem.png" alt="hero-elem.png"/>
+                </picture>
+              </div>
               <div class="main-page__hero-bg"> 
                 <picture class="picture">
                   <source class="lazyload" type="image/webp" srcset="webp/hero.webp 1x" alt="hero.jpg" media="(min-width: 769px)"/>
                   <source class="lazyload" type="image/jpeg" srcset="images/hero.jpg 1x" alt="hero.jpg" media="(min-width: 769px)"/>
-                  <source class="lazyload" type="image/webp" srcset="webp/hero-mob.webp 1x" alt="hero.jpg" media="(max-width: 768px)"/>
+                  <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="hero.jpg" media="(max-width: 768px)"/>
                   <source class="lazyload" type="image/jpeg" srcset="images/hero-mob.jpg 1x" alt="hero.jpg" media="(max-width: 768px)"/><img class="picture__img lazyload" data-src="images/hero.jpg" alt="hero.jpg"/>
                 </picture>
               </div>
               <div class="main-page__hero-content">
-                <div class="main-page__hero-title">
-                   <span>Бот Релока</span> <br> это телеграм-приложение <br> для PlayStation</div>
-                <div class="main-page__hero-text">
-                   В нём можно покупать игры, дополнения, подписки, игровую валюту и прочие товары на турецкий аккаунт PlayStation — из России за рубли.</div>
+                <div class="main-page__hero-title" data-aos="fade-up"><span>Бот Релока</span> <br> это телеграм-приложение <br> для PlayStation</div>
+                <div class="main-page__hero-text" data-aos="fade-up">В нём можно покупать игры, дополнения, подписки, игровую валюту и прочие товары на турецкий аккаунт PlayStation — из России за рубли.</div>
               </div>
             </div>
           </section>
           <section class="main-page__about">
-            <div class="container">
+            <div class="container container--small-mobile">
               <div class="main-page__about-grid"> 
-                <div class="main-page__about-item"> 
+                <div class="main-page__about-item" data-aos="fade-up">
                   <div class="main-page__about-bg">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/about-1.webp 1x" alt="about-1.jpg" media="(min-width: 769px)"/>
@@ -1775,11 +1781,11 @@
                     </picture>
                   </div>
                   <div class="main-page__about-heading">
-                     PS Store не работает в России с марта 2022 года</div>
+                     PS Store не работает в России с марта 2022 года</div>
                   <div class="main-page__about-text">
                      PlayStation закрыла свой онлайн-магазин и прекратила принимать оплату российскими картами. С тех пор россияне покупают игры в обход — через Турцию.</div>
                 </div>
-                <div class="main-page__about-item"> 
+                <div class="main-page__about-item" data-aos="fade-up">
                   <div class="main-page__about-bg">
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/about-2.webp 1x" alt="about-2.jpg" media="(min-width: 769px)"/>
@@ -1800,16 +1806,15 @@
             <div class="container"> 
               <div class="main-page__features">
                 <div class="main-page__features-wrapper"> 
-                  <div class="main-page__features-top"> 
+                  <div class="main-page__features-top" data-aos="fade-up">
                     <div class="main-page__title">
-                       Зачем нужен PS Store</div>
+                       Зачем нужен PS Store</div>
                     <div class="main-page__features-icon"> <img src="images/ps-store.png" alt=""></div>
                   </div>
-                  <div class="main-page__features-caption">
-                     Покупать игры в PS Store лучше, чем на дисках, по многим причинам</div>
+                  <div class="main-page__features-caption" data-aos="fade-up">Покупать игры в PS Store лучше, чем на дисках, по многим причинам</div>
                 </div>
                 <div class="main-page__features-list"> 
-                  <div class="main-page__features-item"> 
+                  <div class="main-page__features-item" data-aos="fade-up">
                     <div class="main-page__features-img">
                       <div class="main-page__check">
                         <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1829,10 +1834,9 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="main-page__features-text">
-                       Мгновенное получение игры после покупки</div>
+                    <div class="main-page__features-text"> Мгновенное получение игры после покупки</div>
                   </div>
-                  <div class="main-page__features-item"> 
+                  <div class="main-page__features-item" data-aos="fade-up">
                     <div class="main-page__features-img">
                       <div class="main-page__check">
                         <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1852,10 +1856,9 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="main-page__features-text">
-                       Мгновенное получение игры после покупки</div>
+                    <div class="main-page__features-text"> Предзагрузка новинок и релиз одновременно со всем миром</div>
                   </div>
-                  <div class="main-page__features-item"> 
+                  <div class="main-page__features-item" data-aos="fade-up">
                     <div class="main-page__features-img">
                       <div class="main-page__check">
                         <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1875,10 +1878,9 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="main-page__features-text">
-                       Мгновенное получение игры после покупки</div>
+                    <div class="main-page__features-text"> Покупка дополнений</div>
                   </div>
-                  <div class="main-page__features-item"> 
+                  <div class="main-page__features-item" data-aos="fade-up">
                     <div class="main-page__features-img">
                       <div class="main-page__check">
                         <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1898,10 +1900,9 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="main-page__features-text">
-                       Мгновенное получение игры после покупки</div>
+                    <div class="main-page__features-text"> Продление подписок</div>
                   </div>
-                  <div class="main-page__features-item"> 
+                  <div class="main-page__features-item" data-aos="fade-up">
                     <div class="main-page__features-img">
                       <div class="main-page__check">
                         <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1921,14 +1922,13 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="main-page__features-text">
-                       Мгновенное получение игры после покупки</div>
+                    <div class="main-page__features-text"> Ежемесячные распродажи от PlayStation</div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section class="main-page__section"> 
+          <section class="main-page__section" data-aos="fade-up">
             <div class="container container--small"> 
               <div class="main-page__block">
                 <div class="main-page__block-item"> 
@@ -2000,7 +2000,7 @@
               <div class="main-page__account">
                 <div class="main-page__account-row"> 
                   <div class="main-page__account-col">
-                    <div class="main-page__account-wrapper"> 
+                    <div class="main-page__account-wrapper" data-aos="fade-up">
                       <div class="main-page__account-icon">
                         <picture class="picture">
                           <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="turkey.png"/>
@@ -2012,19 +2012,19 @@
                     </div>
                   </div>
                   <div class="main-page__account-col">
-                    <div class="main-page__account-item"> 
+                    <div class="main-page__account-item" data-aos="fade-up">
                       <div class="main-page__num"> 
                         <div class="main-page__num-text">1</div>
                       </div>
                       <div class="main-page__account-text"> Как и российский: покупаете игры, играете в игры. Никакой разницы, даже если использовать его из России.</div>
                     </div>
-                    <div class="main-page__account-item"> 
+                    <div class="main-page__account-item" data-aos="fade-up">
                       <div class="main-page__num"> 
                         <div class="main-page__num-text">2</div>
                       </div>
                       <div class="main-page__account-text"> А ещё можно устанавливать игры с турецкого аккаунта, а играть на российском — тогда достижения и сохранения будут на российском.</div>
                     </div>
-                    <div class="main-page__account-item"> 
+                    <div class="main-page__account-item" data-aos="fade-up">
                       <div class="main-page__num"> 
                         <div class="main-page__num-text">3</div>
                       </div>
@@ -2047,7 +2047,7 @@
                   </picture>
                 </div>
                 <div class="main-page__reloc-content"> 
-                  <div class="main-page__reloc-wrapper">
+                  <div class="main-page__reloc-wrapper" data-aos="fade-up">
                     <div class="main-page__reloc-top">
                       <div class="main-page__title">
                          Что за Релок?</div>
@@ -2058,15 +2058,19 @@
                         </picture>
                       </div>
                     </div>
-                    <div class="main-page__reloc-button desktop"> <a class="button" href="#">
-                        <div class="button__text"> 
-                           почитать отзывы
+                    <div class="main-page__reloc-button desktop"> <a class="button" href="#" icon="icon">
+                        <div class="button__icon"> 
+                          <svg class="button__svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53269 9.14556L16.4243 2.9124C17.8943 2.26312 22.8795 0.185395 22.8795 0.185395C22.8795 0.185395 25.1804 -0.723608 24.9886 1.48397C24.9247 2.39297 24.4134 5.57448 23.9021 9.0157L22.3043 19.2095C22.3043 19.2095 22.1765 20.7029 21.09 20.9626C20.0035 21.2223 18.2139 20.0536 17.8943 19.7939C17.6387 19.5991 13.1009 16.6773 11.4392 15.2489C10.9918 14.8593 10.4805 14.0801 11.5031 13.1711C13.8039 11.0285 16.5522 8.36642 18.2139 6.67827C18.9809 5.89913 19.7478 4.08112 16.5522 6.2887L7.54048 12.4569C7.54048 12.4569 6.51788 13.1062 4.6005 12.5219C2.68312 11.9375 0.446171 11.1584 0.446171 11.1584C0.446171 11.1584 -1.08773 10.1844 1.53269 9.14556Z" fill="white"></path>
+                          </svg>
+                        </div>
+                        <div class="button__text"> почитать отзывы в телеграме
                         </div></a>
                     </div>
                   </div>
                   <div class="main-page__reloc-row"> 
                     <div class="main-page__reloc-col">
-                      <div class="main-page__reloc-item"> 
+                      <div class="main-page__reloc-item" data-aos="fade-up">
                         <div class="main-page__reloc-check">
                           <div class="main-page__check">
                             <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2088,7 +2092,7 @@
                         </div>
                         <div class="main-page__reloc-text"> Это бот, в котором можно покупать игры в турецком PS Store из России за рубли</div>
                       </div>
-                      <div class="main-page__reloc-item"> 
+                      <div class="main-page__reloc-item" data-aos="fade-up">
                         <div class="main-page__reloc-check">
                           <div class="main-page__check">
                             <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2112,7 +2116,7 @@
                       </div>
                     </div>
                     <div class="main-page__reloc-col">
-                      <div class="main-page__reloc-item"> 
+                      <div class="main-page__reloc-item" data-aos="fade-up">
                         <div class="main-page__reloc-check">
                           <div class="main-page__check">
                             <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2134,7 +2138,7 @@
                         </div>
                         <div class="main-page__reloc-text"> Тысячи отзывов, сотни тысяч оформленных заказов</div>
                       </div>
-                      <div class="main-page__reloc-item"> 
+                      <div class="main-page__reloc-item" data-aos="fade-up">
                         <div class="main-page__reloc-check">
                           <div class="main-page__check">
                             <svg class="main-page__check-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2158,7 +2162,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="main-page__reloc-button mobile"> <a class="button" href="#">
+                  <div class="main-page__reloc-button mobile" data-aos="fade-up"><a class="button" href="#">
                       <div class="button__text"> почитать отзывы
                       </div></a>
                   </div>
@@ -2169,7 +2173,7 @@
           <section class="main-page__section hidden">
             <div class="container"> 
               <div class="main-page__slider">
-                <div class="main-page__slider-top"> 
+                <div class="main-page__slider-top" data-aos="fade-up">
                   <div class="main-page__title main-page__slider-title">
                      Как покупать в Релоке</div>
                   <div class="main-page__slider-text">
@@ -3855,105 +3859,43 @@
                     </div>
                   </div>
                 </div>
-                <div class="main-page__slider-wrapper"> 
-                  <div class="swiper-container swiper-container--slide-width-auto swiper-container--slide-height-max" data-slider-id="default" data-slider-prev="1" data-slider-next="2">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-1.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-1.jpg"/><img class="picture__img lazyload" data-src="images/slide-1.jpg" alt="slide-1.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-2.webp 1x" alt="slide-2.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-2.jpg 1x" alt="slide-2.jpg"/><img class="picture__img lazyload" data-src="images/slide-2.jpg" alt="slide-2.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-3.webp 1x" alt="slide-3.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-3.jpg 1x" alt="slide-3.jpg"/><img class="picture__img lazyload" data-src="images/slide-3.jpg" alt="slide-3.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-4.webp 1x" alt="slide-4.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-4.jpg 1x" alt="slide-4.jpg"/><img class="picture__img lazyload" data-src="images/slide-4.jpg" alt="slide-4.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-5.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-5.jpg"/><img class="picture__img lazyload" data-src="images/slide-5.jpg" alt="slide-5.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-6.webp 1x" alt="slide-6.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-6.jpg 1x" alt="slide-6.jpg"/><img class="picture__img lazyload" data-src="images/slide-6.jpg" alt="slide-6.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-1.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-1.jpg"/><img class="picture__img lazyload" data-src="images/slide-1.jpg" alt="slide-1.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-2.webp 1x" alt="slide-2.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-2.jpg 1x" alt="slide-2.jpg"/><img class="picture__img lazyload" data-src="images/slide-2.jpg" alt="slide-2.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-3.webp 1x" alt="slide-3.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-3.jpg 1x" alt="slide-3.jpg"/><img class="picture__img lazyload" data-src="images/slide-3.jpg" alt="slide-3.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-4.webp 1x" alt="slide-4.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-4.jpg 1x" alt="slide-4.jpg"/><img class="picture__img lazyload" data-src="images/slide-4.jpg" alt="slide-4.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-5.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-5.jpg"/><img class="picture__img lazyload" data-src="images/slide-5.jpg" alt="slide-5.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="main-page__slider-slide shadow">
-                          <picture class="picture">
-                            <source class="lazyload" type="image/webp" srcset="webp/slide-6.webp 1x" alt="slide-6.jpg"/>
-                            <source class="lazyload" type="image/jpeg" srcset="images/slide-6.jpg 1x" alt="slide-6.jpg"/><img class="picture__img lazyload" data-src="images/slide-6.jpg" alt="slide-6.jpg"/>
-                          </picture>
-                        </div>
-                      </div>
+                <div class="main-page__slider-wrapper" data-scroll="" data-aos="fade-up">
+                  <div class="main-page__slider-container" data-scroll-container="">
+                    <div class="main-page__slider-slide">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-1.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-1.jpg"/><img class="picture__img lazyload" data-src="images/slide-1.jpg" alt="slide-1.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__slider-slide shadow">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-2.webp 1x" alt="slide-2.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-2.jpg 1x" alt="slide-2.jpg"/><img class="picture__img lazyload" data-src="images/slide-2.jpg" alt="slide-2.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__slider-slide">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-3.webp 1x" alt="slide-3.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-3.jpg 1x" alt="slide-3.jpg"/><img class="picture__img lazyload" data-src="images/slide-3.jpg" alt="slide-3.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__slider-slide shadow">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-4.webp 1x" alt="slide-4.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-4.jpg 1x" alt="slide-4.jpg"/><img class="picture__img lazyload" data-src="images/slide-4.jpg" alt="slide-4.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__slider-slide">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-1.webp 1x" alt="slide-5.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-1.jpg 1x" alt="slide-5.jpg"/><img class="picture__img lazyload" data-src="images/slide-5.jpg" alt="slide-5.jpg"/>
+                      </picture>
+                    </div>
+                    <div class="main-page__slider-slide shadow">
+                      <picture class="picture">
+                        <source class="lazyload" type="image/webp" srcset="webp/slide-6.webp 1x" alt="slide-6.jpg"/>
+                        <source class="lazyload" type="image/jpeg" srcset="images/slide-6.jpg 1x" alt="slide-6.jpg"/><img class="picture__img lazyload" data-src="images/slide-6.jpg" alt="slide-6.jpg"/>
+                      </picture>
                     </div>
                   </div>
                 </div>
@@ -3964,41 +3906,39 @@
             <div class="container"> 
               <div class="main-page__order">
                 <div class="main-page__mobile"> 
-                  <div class="main-page__title">
-                     Как сделать заказ</div>
+                  <div class="main-page__title" data-aos="fade-up">Как сделать заказ</div>
                 </div>
                 <div class="main-page__order-row"> 
                   <div class="main-page__order-col">
                     <div class="main-page__order-top"> 
-                      <div class="main-page__title">
-                         Как сделать заказ</div>
+                      <div class="main-page__title" data-aos="fade-up">Как сделать заказ</div>
                     </div>
                     <div class="main-page__order-list"> 
-                      <div class="main-page__order-item">
+                      <div class="main-page__order-item" data-aos="fade-up">
                         <div class="main-page__num">
                           <div class="main-page__num-text">1</div>
                         </div>
                         <div class="main-page__order-text"> Выберите товар в боте: найдите через поиск или в каталоге</div>
                       </div>
-                      <div class="main-page__order-item">
+                      <div class="main-page__order-item" data-aos="fade-up">
                         <div class="main-page__num">
                           <div class="main-page__num-text">2</div>
                         </div>
                         <div class="main-page__order-text"> Добавьте в корзину</div>
                       </div>
-                      <div class="main-page__order-item">
+                      <div class="main-page__order-item" data-aos="fade-up">
                         <div class="main-page__num">
                           <div class="main-page__num-text">3</div>
                         </div>
                         <div class="main-page__order-text"> Впишите данные от своего турецкого аккаунта (или попросите сделать новый специально для вас — это бесплатно)</div>
                       </div>
-                      <div class="main-page__order-item">
+                      <div class="main-page__order-item" data-aos="fade-up">
                         <div class="main-page__num">
                           <div class="main-page__num-text">4</div>
                         </div>
                         <div class="main-page__order-text"> Оплатите покупку рублями</div>
                       </div>
-                      <div class="main-page__order-item">
+                      <div class="main-page__order-item" data-aos="fade-up">
                         <div class="main-page__num">
                           <div class="main-page__num-text">5</div>
                         </div>
@@ -4007,11 +3947,8 @@
                     </div>
                   </div>
                   <div class="main-page__order-col">
-                    <div class="main-page__order-img">
-                      <picture class="picture">
-                        <source class="lazyload" type="image/webp" srcset="webp/hero.webp 1x" alt="hero.jpg"/>
-                        <source class="lazyload" type="image/jpeg" srcset="images/hero.jpg 1x" alt="hero.jpg"/><img class="picture__img lazyload" data-src="images/hero.jpg" alt="hero.jpg"/>
-                      </picture>
+                    <div class="main-page__order-video" data-aos="fade-up">
+                      <video src="mp4/preview.mp4" controls> </video>
                     </div>
                   </div>
                 </div>
@@ -4020,7 +3957,7 @@
           </section>
           <section class="main-page__section"> 
             <div class="container">
-              <div class="main-page__bot">
+              <div class="main-page__bot" data-aos="fade-up">
                 <div class="main-page__title main-page__bot-title">Всё это — <span>за 10 минут</span></div>
                 <div class="main-page__bot-inner"> 
                   <div class="qr">
@@ -5708,7 +5645,7 @@
           <section class="main-page__section"> 
             <div class="container">
               <div class="main-page__info">
-                <div class="main-page__info-col">
+                <div class="main-page__info-col" data-aos="fade-up">
                   <div class="main-page__info-bg"> 
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="webp/info-1.webp 1x" alt="info-1.jpg" media="(min-width: 769px)"/>
@@ -5726,14 +5663,14 @@
                     </div>
                     <div class="main-page__info-item">
                       <div class="main-page__info-num"> 
-                        <div class="main-page__title"> <span>3000+</span></div>
+                        <div class="main-page__title"> <span>4000+</span></div>
                       </div>
                       <div class="main-page__info-text">
                          отзывов в соцсетях</div>
                     </div>
                   </div>
                 </div>
-                <div class="main-page__info-col">
+                <div class="main-page__info-col" data-aos="fade-up">
                   <div class="main-page__info-bg"> 
                     <picture class="picture">
                       <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,UklGRv4OAABXRUJQVlA4IPIOAACQJAGdASrdBH0DPpFInE0lpCYloAhAwBIJaW78fJUg4J54Q+u4rIC2nWNgn//X3f+0ax7mfFf632AJ76dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dVpqKr6e41Eq801nTp06dOnTp06dOnTp06dOnUkDUVvGujbzTWdOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dOnTp06dZmvNNaSKO+BkDUVX09xqJV5prOnTp06dOnTp06dOnTp06dOnTp06dOnTp0+d0c99JRUc99JRUc99JRUc99JRUc99JRUc99JRUc99JRUc965sQYpLOScok3CT6e41Eq801nTp06dOnTp06dOnTp06dOnTp06dOnTp3fqKr6e41Eq801nTp06dOnTp06dOnTp06dOnTqSJNwn4JZfisqhrOnTp06dOnTp06dOnTp06dOnTp06dOnTp3fqKr6h+aiVeaafkxHUb43Zk+WTMeFvj+WUEZkyERGkHZotPJp/KtFpRltp8C0zXmms6dOnTp06dOnTp06dOnTp06dOnTp1LAK9NZ06dOnTp06dIHGI6rMyGh35zZlDBvi4dtssyZCPmPOVFrO79Rltp7jUSr07r9+rV6MGdOnTp06dOnnhAyq+nuNTY805QNUJTy9xqJV1GfGKvM5lELGvWGq+mXA8LfknO19IHIXuhDZZQ01SviQDZVDWdOnTp06dOnTqtdgLTWdOnnhhdNZ06dOq041YQBjUS1XprOnTp06dOnTp0hBoUzp06dOstR5CQPOafPHOcFCq+ofmolXmms6dO79RVgDzrRMhwxp4Nvcah9oyFprOnTp06d4G3Wsfcq801j7orzTWdOnTp87QbWTtFufT3GnYgQO9oLVfs5PkpcYi7m9KW5vNNZ+ZTZVfYHAggQkSrzTWdH83Cb7tRKvNNZ06dOnTp1JA1FV9PlPePNNZ06b5AhIlXmmsfewU4P39R0vf819OnTp06dOnTp06cC1eaazu/dN3TDKr6e41EsBUtr0QWZPofg5prOnTp07v1FV9PcZz8ChjTz7wWcIEJEq801nUDwIr6i5bRWI8pXp06dOnTp06dSQNRVfTJ2VX40JKaPk2eTiQ1EqjryS3mMDuHDG8WRD6i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 1x" alt="info-2.jpg" media="(min-width: 769px)"/>
@@ -5780,18 +5717,25 @@
           <section class="main-page__section"> 
             <div class="main-page__hero bot">
               <div class="main-page__hero-container">
+                <div class="main-page__hero-elem" data-aos="fade-up" data-aos-delay="200">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="webp/hero-elem.webp 1x" alt="hero-elem.png" media="(min-width: 769px)"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/hero-elem.jpg 1x" alt="hero-elem.png" media="(min-width: 769px)"/>
+                    <source class="lazyload" type="image/webp" srcset="webp/hero-elem-mob.webp 1x" alt="hero-elem.png" media="(max-width: 768px)"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/hero-elem-mob.jpg 1x" alt="hero-elem.png" media="(max-width: 768px)"/><img class="picture__img lazyload" data-src="images/hero-elem.png" alt="hero-elem.png"/>
+                  </picture>
+                </div>
                 <div class="main-page__hero-bg"> 
                   <picture class="picture">
                     <source class="lazyload" type="image/webp" srcset="webp/hero.webp 1x" alt="hero.jpg" media="(min-width: 769px)"/>
                     <source class="lazyload" type="image/jpeg" srcset="images/hero.jpg 1x" alt="hero.jpg" media="(min-width: 769px)"/>
-                    <source class="lazyload" type="image/webp" srcset="webp/hero-mob.webp 1x" alt="hero.jpg" media="(max-width: 768px)"/>
+                    <source class="lazyload" type="image/webp" srcset="data:image/webp;base64,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 1x" alt="hero.jpg" media="(max-width: 768px)"/>
                     <source class="lazyload" type="image/jpeg" srcset="images/hero-mob.jpg 1x" alt="hero.jpg" media="(max-width: 768px)"/><img class="picture__img lazyload" data-src="images/hero.jpg" alt="hero.jpg"/>
                   </picture>
                 </div>
                 <div class="main-page__hero-content">
-                  <div class="main-page__hero-title">
-                     <span>Нужны игры на PlayStation?</span> <br> Релок поможет купить любые.</div>
-                  <div class="main-page__hero-inner"> 
+                  <div class="main-page__hero-title" data-aos="fade-up"><span>Нужны игры на PlayStation?</span> <br> Релок поможет купить любые.</div>
+                  <div class="main-page__hero-inner" data-aos="fade-up">
                     <div class="qr">
                       <div class="qr__icon"> 
                         <svg class="qr__svg" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
